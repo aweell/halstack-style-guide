@@ -1,7 +1,33 @@
 ## Overview
 
-Text inputs are the standard way to receive the user input into an application. There are several types of inputs to cover a spectrum, from email inputs to numbers.
-Each input should specify which property the user is editing and indicate clearly the status of the field in every interaction.
+Text inputs are input fields typically used in forms that allow the user to enter text data in a structured format.
+
+## Usage
+
+Use text inputs in forms to help people enter, select, and search for text. They can also be part of a modal, search, etc...
+
+Common text input types include: 
+* Usernames
+* Descriptions
+* URLs
+* Phone numbers
+* Credit cards
+* Emails, addresses
+* Plain text searches
+
+### Do's
+
+* Do use fixed width inputs for content that has a specific, known length (e.g. post code, phone number).
+* Do use sentence for any input text case with standard, local grammar and punctuation rules.
+* Do use helpful and clear text for labels, error messages and helper texts
+
+### Dont's
+
+* Do not use text-input for text longer than a single line (e.g. name, phone number). Use the text-area instead.
+* Do not disable copy and paste.
+* Do not display pop up error message after validating
+* Avoid masking label, keep it always visible.
+
 
 ## Appearance
 
