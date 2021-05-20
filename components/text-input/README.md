@@ -21,6 +21,7 @@ Common text input types include:
 * Do use sentence for any input text case with standard, local grammar and punctuation rules.
 * Do use helpful and clear text for labels, error messages and helper texts
 
+
 ### Dont's
 
 * Do not use text-input for text longer than a single line (e.g. name, phone number). Use the text-area instead.
@@ -45,6 +46,10 @@ Four different modes can be identify using text input component: **default**, **
 The states for text input are: **normal**, **focused**, **invalid** and **disabled**.
 
 ![Input states example](images/input_states.png)
+
+### Placement and alignment
+
+Where possible, ensure that field lengths provide meaningful affordances that help people answer questions effectively. Otherwise, utilize a consistent length that provides enough room for correct answers.
 
 ## Design tokens
 
@@ -135,11 +140,18 @@ And also apply different values to each side of the component:
 
 ![Specifications for input component](images/input_specs.png)
 
-### Required fields
+### Optional/mandatory fields
 
 Required fields are a variation in the normal behavior of the input fields. This indicates to the user that the input is required so it can't be skipped if the intention is to go forward in the application.
 
-A red asterisks before the input label must indicate that the text input is a required field, with this visual clue the application is telling the user the mandatory field.
+
+* Try to avoid optional input fields in forms.
+* If most of the inputs on a form are required, indicate the few that are optional.
+* If most of the inputs on a form are optional, indicate the few that are required.
+* When indicating what form fields are either required or optional, text is the most clear. However, the * symbol is relatively well understood to mean required.
+If you do use * to indicate required fields, don’t forget a legend that explains what it indicates.
+
+
 
 Here are the different representations of a required field:
 
